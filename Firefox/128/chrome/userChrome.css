@@ -1,0 +1,37 @@
+:root {
+	--tab-min-height: 32px !important;
+	--tab-border-radius: 8px 8px 0px 0px !important;
+	--tab-block-margin: 0 !important;
+	--inactive-titlebar-opacity: 1.0 !important;
+}
+
+.titlebar-spacer {
+	display: none !important;
+}
+
+.tabbrowser-tab {
+	padding: 1px 1px 0 1px !important;
+	padding-inline: 1px !important;
+}
+.tabbrowser-tab .tab-background {
+	box-shadow: none !important;
+}
+.tabbrowser-tab:is([selected], [multiselected]) .tab-background {
+	box-shadow: 0 0 4px light-dark(rgba(0,0,0,.4), rgba(255,255,255,1)) !important;
+	background: linear-gradient(to bottom, var(--tab-selected-bgcolor), var(--toolbar-bgcolor)) !important;
+	outline: none !important;
+	outline-offset: 0 !important;
+}
+
+.tabbrowser-tab:not([selected], [multiselected]):hover .tab-background,
+#tabbrowser-arrowscrollbox-periphery:hover .toolbarbutton-icon {
+	background: linear-gradient(to bottom, var(--tab-selected-bgcolor), var(--toolbar-bgcolor)) !important;
+}
+
+.tab-close-button {
+	border-radius: 50% !important;
+}
+
+#nav-bar {
+	border-top: none !important;
+}
