@@ -11,7 +11,7 @@
 
 .tabbrowser-tab {
 	padding: 1px 1px 0 1px !important;
-	padding-inline: 1px !important;
+	padding-inline: 0.5px !important;
 }
 .tabbrowser-tab .tab-background {
 	box-shadow: none !important;
